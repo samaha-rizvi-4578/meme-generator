@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Gen</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="memeStyle.css" />
+  </head>
+  <body>
+    <!--header-->
+    <nav>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <!--main body-->
+    <div class="center" id="head">
+      <h1>Your Own Meme Generator</h1>
+      <p>
+        <br />" This is a meme generating project made with HTML, CSS, and
+        Javascript. You may now create your own memes by supplying your own
+        image and text. You may also modify the colour of your text that appears
+        on meme. and share it with your friends by downloading it."
+      </p>
+    </div>
+
+    <img src="assets/png.png" alt="loading" class="center" />
+
+    <div class="center" id="selectBox">
+      <h3 id="temp">Upload a template</h3>
+
+      <input type="file" name="myfile" id="chooseFile" />
+
+      <div class="flexBox">
+        <h3>Top Text:</h3>
+        <input type="text" name="topText" id="topText" class="text" />
+      </div>
+      <div class="flexBox">
+        <h3>Bottom Text:</h3>
+        <input type="text" name="bottomText" id="bottomText" class="text" />
+      </div>
+      <!--color changing option-->
+      <div>
+        <h3>Text Color:</h3>
+        <div id="ButtonBlock">
+          <button class="button" id="btnWhite" onclick="white()">White</button>
+          <button class="button" id="btnRed" onclick="red()">Red</button>
+          <button class="button" id="btnBlue" onclick="blue()">Blue</button>
+          <button class="button" id="btnGreen" onclick="green()">Green</button>
+        </div>
+      </div>
+      <div>
+        <!--generate meme-->
+        <button class="button" id="btn">Generate!</button>
+        <!--download-->
+        <button
+          class="button"
+          id="dwnbtn"
+          style="display: none"
+          onclick="downloadCanvas()"
+        >
+          Download Me!
+        </button>
+      </div>
+      <br />
+      <hr />
+    </div>
+
+    <div class="flexBox">
+      <canvas id="memeResult"></canvas>
+    </div>
+    <!--footer-->
+    <footer>
+      <div class="about-section" id="about">
+        <h1 class="center">About Us</h1>
+      </div>
+
+      <div class="row" id="contact">
+        <div class="column">
+          <div class="card">
+            <img src="assets/dp1.jpg" alt="shaheer" />
+            <div class="container">
+              <h2>Muhammad Shaheer</h2>
+              <p class="title">Team Leader</p>
+              <p>
+                I worked on the javascript to make this project operational.
+              </p>
+              <i class="material-icons"
+                >&#xe158;
+                <p class="gmail">muhammadshaheer645@gmail.com</p></i
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="assets/dp1.jpg" alt="Samaha" />
+            <div class="container">
+              <h2>Samaha Batool</h2>
+              <p class="title">Member</p>
+              <p>
+                I offered my skills to make this website responsive and to
+                include some additional Js options.
+              </p>
+              <i class="material-icons"
+                >&#xe158;
+                <p class="gmail">samahabatool7@gmail.com</p></i
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="assets/dp1.jpg" alt="hassan" />
+            <div class="container">
+              <h2>Hassan Shahid</h2>
+              <p class="title">Member</p>
+              <p>I primarily handled the HTML and CSS for this project.</p>
+              <i class="material-icons"
+                >&#xe158;
+                <p class="gmail">hassangatta@gmial.com</p></i
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="assets/dp1.jpg" alt="anas" />
+            <div class="container">
+              <h2>Anas Imran</h2>
+              <p class="title">Member</p>
+              <p>
+                I invested my time and effort to create the theme for this
+                project.
+              </p>
+              <i class="material-icons"
+                >&#xe158;
+                <p class="gmail">anasimran0987@gmail.com</p></i
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="meme.js"></script>
+  </body>
+</html>

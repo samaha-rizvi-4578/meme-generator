@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", sans-serif, "Helvetica Neue", sans-serif;
+}
+body {
+  background: url(assets/bg2.jpg);
+  background-size: contain;
+}
+/* NAV */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #374625a9;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ffd4ba69;
+  color: #3d1c07;
+  font-weight: 600;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #9e5a3baf;
+  color: white;
+  font-weight: 600;
+}
+/* HEAD */
+#head {
+  height: 100%;
+  padding: 30px 50px;
+  background-color: #9783436c;
+  color: #4b4327;
+}
+#head h1 {
+  font-family: "Brush Script MT", cursive;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+#head p {
+  font-weight: 800;
+  font-size: 17px;
+  font-style: italic;
+  padding: 10px 200px;
+  justify-content: center;
+}
+img {
+  width: 13%;
+  padding-top: 80px;
+  margin: auto;
+  display: block;
+}
+/* SELECT */
+#selectBox {
+  margin-top: 50px;
+}
+#chooseFile {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-left: 71px;
+}
+#topText {
+  margin-left: 75px;
+  width: 60%;
+  height: 20px;
+  padding: 10px 20px;
+}
+#bottomText {
+  margin-left: 40px;
+  width: 60%;
+  height: 20px;
+  padding: 10px 20px;
+}
+
+#ButtonBlock {
+  margin: 20px;
+}
+
+#memeResult {
+  width: 300px;
+}
+
+/* ABOUT */
+.about-section {
+  margin-top: 80px;
+  padding: 30px;
+  background-color: #374625a9;
+  color: white;
+}
+
+.row {
+  background-color: #9783437e;
+  padding: 35px 320px ;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.column {
+  margin: auto;
+  width: 300px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 10px 0px 70px 20px rgba(184, 183, 183, 0.2);
+  margin: 20px;
+  background-color: #97834371;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.card img {
+  height: 100px;
+  width: 100%;
+  padding-top: 80px;
+  margin: auto;
+  display: block;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(61, 60, 60);
+}
+
+.gmail {
+  font-size: 14px;
+}
+
+/* util */
+.button {
+  background-color: #ffd5ba;
+  border-radius: 8px;
+  border-width: 0;
+  color: #404040;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0 4px;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+#btnWhite:hover {
+  background-color: rgb(116, 113, 113);
+  color: white;
+}
+#btnRed:hover {
+  background-color: red;
+  color: white;
+}
+#btnBlue:hover {
+  background-color: blue;
+  color: white;
+}
+#btnGreen:hover {
+  background-color: green;
+  color: white;
+}
+
+h1 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+h3 {
+  font-size: 25px;
+}
+.flexBox {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  padding: 7px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffcea9c7;
+}
+.center {
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media (max-width: 850px) {
+  img {
+    width: 30%;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+  #head h1 {
+    font-size: 20px;
+  }
+  #head p {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+  #topText {
+    width: 30%;
+  }
+  #bottomText {
+    width: 30%;
+  }
+  .row{
+    grid-template-columns: repeat(1,1fr);
+    padding: 0px 0px;
+  }
+
+
+}
